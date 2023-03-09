@@ -12,6 +12,24 @@ Table of Contents:
     1. Global Styles
 ////////////////////////*/
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-background-colour-dark: #F26D40;
+    --main-background-colour-medium: #F69051;
+    --main-background-colour-light: #F9C48B;
+    --section-background-colour: #FDEFEC;
+
+}
+
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
@@ -21,15 +39,58 @@ body {
     2. Typography
 ////////////////////////*/
 
+h2 {
+    margin: 0 0 .5rem 0;
+}
 
+p {
+    margin: .75rem 0;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
+body {
+    background-color: var(--main-background-colour-light);
+}
 
+section {
+    background-color: var(--section-background-colour);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin: 1.5rem;
+}
+
+.novi-img {
+    width: 100%;
+}
 
 
 /*////////////////////////
     2. Media Queries
 ////////////////////////*/
+
+
+
+@media screen and (min-width: 768px) {
+
+    html {
+        font-size: 18px;
+    }
+
+    body {
+        background-color: var(--main-background-colour-medium);
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    html {
+        font-size: 20px;
+    }
+
+    body {
+        background-color: var(--main-background-colour-dark);
+    }
+}
